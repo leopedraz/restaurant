@@ -1,0 +1,297 @@
+body {
+    background: url(backgroundtable.jpg);
+    font-family: 'Black Ops One', cursive;
+    letter-spacing: normal;
+    font-stretch: normal;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+img{
+    width: 100%;
+}
+
+.grid-container-header {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5em;
+
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+
+section img {
+    grid-column: 1/-1;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin: auto;
+    display: flex;
+    width: 20%;
+}
+
+.grid-container-dishes > div {
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+}
+
+
+.dishes1 {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0.3em;
+     cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    margin: 1em;
+    font-family: 'Black Ops One', cursive;
+    color: #534741;
+    text-decoration: none;
+    text-transform: capitalize;
+
+
+}
+
+.name {
+    margin: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #534741;
+     font-size: 1.5em;
+        position:relative;
+     height: 2.5em;
+    overflow: hidden;
+    vertical-align: text-top;
+}
+
+.photo img{
+    position:relative;
+    overflow: hidden;
+    max-height:  17em;
+    height: 100%;
+    width: 100%;
+    vertical-align: text-top;
+    padding: 0;
+}
+
+
+
+.description {
+  margin: 0.5em;
+
+    text-transform: uppercase;
+     font-weight: bold;
+    color: #534741;
+    font-size: 0,8em;
+}
+
+.price {
+    font-weight: bold;
+    color: #534741;
+     font-size: 1.5em;
+}
+
+.sale{
+     position:absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.sale img {
+     box-shadow: 0px 0px 0px grey;
+     width: auto;
+    height: auto;
+
+}
+
+.veg {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+.veg img {
+     box-shadow: 0px 0px 0px grey;
+    width: auto;
+    height: auto;
+}
+
+.alcohol {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+.alcohol img {
+     box-shadow: 0px 0px 0px grey;
+     width: auto;
+    height: auto;
+}
+
+.soldout {
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.soldout img {
+     box-shadow: 0px 0px 0px grey;
+     width: auto;
+    height: auto;
+
+}
+
+.header img {
+    margin: auto;
+    display: flex;
+    width: 20%;
+}
+
+.grid-container-categories {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+}
+
+.showcontent {
+  position: relative;
+    overflow: hidden;
+}
+
+.hide{
+    display: none;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4d4e4e;
+}
+
+.showcontent:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+   padding: 0.5em;
+}
+
+footer {
+    margin: 1em;
+    padding: 1em;
+}
+
+@media screen and (max-width: 1000px){
+
+.sale img {
+ width: 80%;
+    height: auto;
+}
+    .veg img {
+ width: 80%;
+        height: auto;
+}
+    .soldout img {
+ width: 80%;
+        height: auto;
+}
+
+    .alcohol img {
+ width: 80%;
+        height: auto;
+}
+
+
+    section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+
+section img {
+    grid-column: 1/-1;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin: auto;
+    display: flex;
+    width: 20%;
+}
+
+
+
+}
+@media screen and (max-width: 600px){
+    section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr ;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+    .photo img{
+     max-height: 20em;
+    }
+
+    .header img {
+    margin: auto;
+    display: flex;
+    width: 40%;
+}
+
+    .categories img {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin: auto;
+    display: flex;
+    width: 40%;
+}
+    .name {
+        font-size: 1.2em;
+        position:relative;
+     height: 2.3em;
+    overflow: hidden;
+    vertical-align: text-top;
+    }
+        .grid-container-dishes > div {
+         padding-bottom: 0
+
+        }
+}
+
+}

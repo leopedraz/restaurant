@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt</title>
+    <style>
+         .grid-container10 {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 8px;
+            background-color: gray;
+        }
+          .grid-container10>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 8px;
+            background-color: aquamarine;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+
+        .inner-grid1 {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 5px;
+        }
+
+        .inner-grid1>div {
+            background: lightgreen;
+            padding: 8px;
+        }
+
+        .inner-grid2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5px;
+        }
+
+        .inner-grid2>div {
+            background: green;
+            padding: 15px;
+        }
+        .item10{
+            display: grid;
+             grid-template-rows: 1fr;
+
+        }
+          .grid-container10 {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 8px;
+            background-color: gray;
+        }
+          .grid-container10>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 4px;
+            background-color: aquamarine;
+        }
+
+}
+    </style>
+</head>
+
+<body>
+     <div class="grid-container10">
+        <div class="item1">Header</div>
+</div>
+    <div class="grid-container">
+        <div class="inner-grid1">
+            <div class="item5">0</div>
+            <div class="item6">1</div>
+            <div class="item7">2</div>
+        </div>
+        <div class="item3">Main Picture </div>
+        <div class="item4">Description Text</div>
+        <div class="inner-grid2">
+            <div class="item5">0</div>
+
+            <div class="item6">1</div>
+            <div class="item7">2</div>
+        </div>
+        <div class="inner-grid2">
+            <div class="item5">0</div>
+            <div class="item6">1</div>
+            <div class="item7">2</div>
+        </div>
+         <div class="inner-grid2">
+            <div class="item5">0</div>
+            <div class="item6">1</div>
+            <div class="item7">2</div>
+        </div>
+
+    </div>
+    <div class="grid-container10">
+        <div class="item10">Reviews</div>
+        <div class="item11">Reviews</div>
+        <div class="item12">Reviews</div>
+        <div class="item10">Reviews</div>
+        <div class="item11">Reviews</div>
+        <div class="item12">Reviews</div>
+        </div>
+
+</body>
+</html>
